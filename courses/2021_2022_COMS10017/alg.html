@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+	<head>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+		<title>COMS10017 - Algorithms 1</title>
+
+		<style type="text/css">
+			h1 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;			
+			font-size: 2em;
+			font-weight: bold;
+			}
+			h2 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			font-size: 1.5em;
+			}
+
+			h3 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			font-size: 1.3em;
+			margin-bottom: 0.0em;
+			margin-top: 1.2em;
+			}
+
+
+			body {
+			font: 10pt verdana,Arial,Helvetica,sans-serif;
+			}
+			a {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			color: #3b4fEb;
+			}
+
+			ol,li {
+			margin-left: 8px;
+			margin-top: 10px;
+			}
+			ol {
+    counter-reset: list; }
+			ol > li {
+				list-style: none;
+			}
+	ol > li:before {
+    content: "[" counter(list) "] ";
+    counter-increment: list;
+}
+
+		</style>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37079407-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+  
+
+
+	</head>
+
+	<body>
+		<h1>COMS10017 <font size="-1">(Object-Oriented Programming and)</font> Algorithms I - 2020/2021 (TB2)</h1>
+		(<a href="alg.html" target="_top">maximize page</a> &nbsp;&nbsp;&nbsp; <a href="index.html" target="_top">joint page with OOP</a> &nbsp;&nbsp;&nbsp; <a href="https://www.ole.bris.ac.uk/webapps/blackboard/execute/content/blankPage?cmd=view&content_id=_5147643_1&course_id=_240777_1">embedded in blackboard</a>)
+		<br>
+		<br>
+		
+<table width="95%">
+ <tr>
+  <td>  
+  
+<br>
+		<b>Note on Loop Invariants:</b> Loop invariants are a difficult subject. I wrote a note on this topic in order to support your learning. Click <a href="alg/worksheets/note-on-loop-invariants.pdf">here</a> to download the note.
+<br>
+<br>
+
+		<b>Teaching Staff:</b> 
+<ul>
+ <li>Lecturer: <a href="http://people.cs.bris.ac.uk/~konrad">Christian Konrad</a> </li>
+ <li>Lead TA: <a href="mailto:kn16063@bristol.ac.uk">Kheeran Naidu</a></li>
+ <li>TAs: Sergiu Avacaritei, Emil Centiu, Llewellyn Forward, Qin Ivan, Daniel Jones, Edward Nechitoaia, Mykola Nechyporuk, Lucian Rusu, Matt Staveley-Taylor, Tyler Wright, Merle Zhang</li>
+</ul>		
+
+<b>Teaching Units:</b> 
+<ul>
+ <li>Lectures: online videos</li>
+ <li>Q & A sessions: Mondays 4pm-5pm (click <a href="https://teams.microsoft.com/l/meetup-join/19%3a520042d9ff894c048da9c23f7d64b21a%40thread.tacv2/1612776221121?context=%7b%22Tid%22%3a%22b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b%22%2c%22Oid%22%3a%22be02198d-0575-4ca7-8849-331182eb86d2%22%7d">here</a> to join the meeting)</li>
+ <li>Exercise classes: Tuesdays 11am-1pm</li>
+</ul>    
+  </td>
+  
+ </tr>
+</table>
+
+<b>Assessment:</b> Final exam (counts 50&percnt; towards your final grade in the joint module <i>COMS10017 Object-Oriented Programming and Algorithms I</i>) <br><br>
+
+Click <a href="alg/worksheets/exam-2019.pdf">here</a> to download the exam of 2019 (and <a href="alg/worksheets/q2d.png">here</a> for a solution to question 2.d.). Note, however, that the exam this year will be very different due to it being an online exam. The questions of the 2019 exam are therefore not representative.
+
+<br> <br>
+
+
+<b>Discussion Board on <a href="http://piazza.com/bristol.ac.uk/spring2021/coms10017">piazza.com</a>:</b>
+<ul>
+ <li>We will use Piazza as our discussion board (click <a href="http://piazza.com/bristol.ac.uk/spring2021/coms10017">here</a> to sign up)</li>
+ <li>Feel free to ask any questions. You can also ask questions anonymously. We wish to see active participation.</li>
+</ul>
+<b>Course Material:</b> 
+All lectures will be taught using slides. Videos and slides will be made available online (below on this webpage). An excellent and more detailed coverage of many of the topics (however not all of them) treated in this course is given in:
+
+"Introduction to Algorithms", Cormen, Leiserson, Rivest, Stein, 3rd edition, The MIT press, 2009 .
+
+
+
+<h2>Schedule</h2>
+Q & A sessions on Monday 4-5pm, Exercise classes on Tuesdays 11am - 1pm
+
+<br> <br>
+
+
+<table style="width:90%; border-collapse: separate; border: 0px solid black;" cellspacing="2px" align="center">
+ <tr style="background-color:#bbf"><th style="width:160px">Week</th>
+  <th style="width:290px" align="left">Learning Session</th><th style="width:50px" align="left">Slides</th><th align="left" style="width:70px">Recording</th>
+ </tr>
+ <tr style="background-color:#eed"><td rowspan="4" valign = "top" align="center">W13: 01 - 05 Feb</td><td><b>Video 1:</b> Welcome and Introduction</td><td align="center"><a href="alg/slides/01-Introduction-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/385b2610-6827-4f54-af42-fccd6d009704" target="_top">video</a> </td></tr>
+ 
+ <tr style="background-color:#eed"><td><b>Video 2:</b> Peak Finding</td><td align="center"><a href="alg/slides/02-peak-finding-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/627840aa-5d0f-4a60-bbf3-edeefb96712d" target="_top">video</a> </td></tr>
+ 
+ <tr style="background-color:#eed"><td><b>Video 3:</b> Why Constants Matter Less</td><td align="center"><a href="alg/slides/03-why-constants-matter-less-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/18692520-e698-4859-bc5e-429e19b96083" target="_top">video</a> </td></tr>
+
+ <tr style="background-color:#eed"><td><b>Video 4:</b> Big-O Notation</td><td align="center"><a href="alg/slides/04-big-o-notation-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/d45f1f3c-12b2-43a9-a4d8-2ab5f465390b" target="_top">video</a> </td></tr>
+
+ 
+ 
+ 
+ 
+ <tr style="background-color:#eef"><td rowspan="4" valign="top" align="center">W14: 08 - 12 Feb <br> <br> <b>Exercise Sheet 1</b> <br><a href="alg/worksheets/sheet1.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet1-solution.pdf">solution</a></td><td><b>Video 5: </b>Theta and Big-Omega</td></td><td align="center"><a href="alg/slides/05-theta-omega-web.pdf">PDF</a></td><td align="center">  <a href="https://web.microsoftstream.com/video/e0edc1fb-0605-41ed-a0cf-ea2a85a8cfb6" target="_top">video</a> </td></tr>
+ 
+ 
+ 
+ <tr style="background-color:#eef"><td><b>Video 6: </b>RAM Model and Runtime Analysis</td><td align="center"><a href="alg/slides/06-RAM-model-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/f9ea5026-bddc-4cb8-a7f4-8e185273ab85" target="_top">video</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 7: </b>Linear and Binary Search</td><td align="center"><a href="alg/slides/07-search-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/65b2a630-a2f2-4816-a6dd-8ecb368f489a" target="_top">video</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 8: </b>Proofs by Induction (Recap)</td><td align="center"><a href="alg/slides/08-induction-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/2a707cd6-68b3-4172-ac0a-822397cb9683" target="_top">video</a> </td></tr>
+ 
+ 
+ <tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W15: 15 - 19 Feb <br> <br> <b>Exercise Sheet 2</b> <br><a href="alg/worksheets/sheet2.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet2-solution.pdf">solution</a></td><td><b>Video 9: </b>Loop Invariants and Insertion-sort</td><td align="center"><a href="alg/slides/09-loop-invariants-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/114583e1-3c86-45cc-bc84-74d3c91a06c7">video</a> </td></tr>
+ 
+ 
+ <tr style="background-color:#eed"><td><b>Video 10: </b>Merge-sort</td><td align="center"><a href="alg/slides/10-merge-sort-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/c875d02e-d198-46bc-980c-1d7e5418ddfd">video</a> </td></tr>
+ 
+ 
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W16: 22 - 26 Feb <br> <br> <b>Exercise Sheet 3</b> <br><a href="alg/worksheets/sheet3.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet3-solution.pdf">solution</a></td><td><b>Video 11: </b>Maximum Subarray Problem</td><td align="center"><a href="alg/slides/11-maximum-subarray-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/74ecbd73-004a-40bc-ad6a-dfbc638eb87d">video</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 12: </b>Trees</td><td align="center"><a href="alg/slides/12-trees-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/9d005a68-6f7b-468d-a834-49e4d31f2a91">video</a> </td></tr>
+ 
+ 
+ <tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">W17: 01 - 05 Mar</td><td colspan="1"><center><b>READING WEEK</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W18: 08 - 12 Mar <br> <br> <b>Exercise Sheet 4</b> <br><a href="alg/worksheets/sheet4.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet4-solution.pdf">solution</a></td><td><b>Video 13: </b>Heap-sort</td><td align="center"><a href="alg/slides/13-heap-sort-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/20a60d58-310a-474c-bace-2f7bdcce96b8">video</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 14: </b>Quicksort</td><td align="center"><a href="alg/slides/14-quick-sort-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/34ae7841-2faa-40bf-b3d3-fc5b04ae2098">video</a> </td></tr>
+  
+ 
+ <tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W19: 15 - 19 Mar <br> <br> <b>Exercise Sheet 5</b> <br><a href="alg/worksheets/sheet5.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet5-solution.pdf">solution</a></td><td><b>Video 15: </b>Runtime of Quicksort</td><td align="center"><a href="alg/slides/15-quick-sort-runtime-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/58844fb4-a037-4eb6-89fd-a5700276d7da">video</a> </td></tr>
+
+ <tr style="background-color:#eed"><td><b>Video 16: </b>Lower Bound for Sorting</td><td align="center"><a href="alg/slides/16-sorting-lb-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/7add311a-96b0-4c31-b814-857810d04668">video</a> </td></tr>
+
+
+ 
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W20: 22 - 26 Mar <br> <br> <b>Exercise Sheet 6</b> <br><a href="alg/worksheets/sheet6.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet6-solution.pdf">solution</a></td><td><b>Video 17: </b>Countingsort and Radixsort</td><td align="center"><a href="alg/slides/17-counting-radix-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/660180bc-ebf8-477b-9366-7d53862e0e06">video</a> </td></tr>
+
+ <tr style="background-color:#eef"><td><b>Video 18: </b>Recurrences I</td><td align="center"><a href="alg/slides/18-recurrences-1-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/41013253-f4b4-489f-95db-2ca282c94477">video</a> </td></tr>
+
+ 
+<tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">EV1: 29 Mar - 02 Apr</td><td colspan="1"><center><b>Easter Week 1</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td rowspan="1" valign="top" align="center">EV2: 05 - 09 Apr</td><td colspan="1"><center><b>Easter Week 2</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+
+<tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">EV3: 12 - 16 Apr</td><td colspan="1"><center><b>Easter Week 3</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W21: 19 - 23 Apr <br> <br> <b>Exercise Sheet 7</b> <br><a href="alg/worksheets/sheet7.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet7-solution.pdf">solution</a></td><td><b>Video 19: </b>Recurrences II</td><td align="center"><a href="alg/slides/19-recurrences-2-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/be2767c6-4a5b-4304-8789-2207c3dbf33c">video</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 20: </b>Fibonacci Numbers</td><td align="center"><a href="alg/slides/20-fibonacci-numbers-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/60bc6f74-8585-411f-a0e2-eecfdbb625c3">video</a> </td></tr>
+
+
+<tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W22: 26 - 30 Apr <br> <br> <b>Exercise Sheet 8</b> <br><a href="alg/worksheets/sheet8.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet8-solution.pdf">solution</a></td><td><b>Video 21: </b>Dynamic Programming - Pole Cutting </td><td align="center"><a href="alg/slides/21-pole-cutting-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/9f442e33-130d-4f40-84ee-d8da3242ae61">video</a> </td></tr>
+
+ <tr style="background-color:#eed"><td><b>Video 22: </b>Dynamic Programming - Matrix Chain Parenthesization (part 1)</td><td align="center"><a href="alg/slides/22-matrix-chain-multiplication-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/b61527a3-06b5-4bef-bca4-5704d3660671">video (part 1)</a> </td></tr>
+
+
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W23: 03 - 07 May <br> <br> <b>Exercise Sheet 9</b> <br><a href="alg/worksheets/sheet9.pdf">PDF</a>&nbsp;<a href="alg/worksheets/sheet9-solution.pdf">solution</a></td><td><b>Video 23: </b>Dynamic Programming - Matrix Chain Parenthesization (part 2) </td><td align="center"><a href="alg/slides/22-matrix-chain-multiplication-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/2af2a20d-fa7e-4f97-bea3-234e739990f0">video (part 2)</a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td><b>Video 24: </b> Elements of Dynamic Programming</td><td align="center"><a href="alg/slides/24-elements-of-dyn-prog-web.pdf">PDF</a></td><td align="center"> <a href="https://web.microsoftstream.com/video/abeced22-79d4-4dc2-9ba7-820e333146a0">video</a> </td></tr>
+
+
+<tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">W24: 10 - 14 May</td><td><b>Revision Week</b>, no new material</td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+
+ 
+</table> 
+ 
+ 		
+		
+	</body>
+</html>
+
