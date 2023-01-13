@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+	<head>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+		<title>COMS10017 - Algorithms 1 (and OOP)</title>
+
+		<style type="text/css">
+			h1 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;			
+			font-size: 2em;
+			font-weight: bold;
+			}
+			h2 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			font-size: 1.5em;
+			}
+
+			h3 {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			font-size: 1.3em;
+			margin-bottom: 0.0em;
+			margin-top: 1.2em;
+			}
+
+
+			body {
+			font: 10pt verdana,Arial,Helvetica,sans-serif;
+			}
+			a {
+  			font-family: verdana,Arial,Helvetica,sans-serif;
+			color: #3b4fEb;
+			}
+
+			ol,li {
+			margin-left: 8px;
+			margin-top: 10px;
+			}
+			ol {
+    counter-reset: list; }
+			ol > li {
+				list-style: none;
+			}
+	ol > li:before {
+    content: "[" counter(list) "] ";
+    counter-increment: list;
+}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>COMS10017 <font size="-1">(Object-Oriented Programming and)</font> Algorithms I - 2022/2023 (TB2)</h1>
+		(<a href="https://bristolalgo.github.io/courses/2022_2023_COMS10017/coms10017.html" target="_top">maximize page</a>  &nbsp;&nbsp;&nbsp; <a href="https://www.ole.bris.ac.uk/webapps/blackboard/execute/content/blankPage?cmd=view&content_id=_5949276_1&course_id=_247721_1">embedded in blackboard</a>)
+		<br> <br>
+		
+<hr>
+
+		  
+<table width="95%">
+ <tr>
+  <td>    
+<b>Welcome to the Unit webpage of the Algorithms 1 unit!</b>
+
+<h3>Teaching Staff</h3> 
+<ul>
+ <li>Lecturer: <a href="http://people.cs.bris.ac.uk/~konrad">Christian Konrad</a> </li>
+ <li>Lead TA: <a href="https://kheerannaidu.com/">Kheeran Naidu</a></li>
+ <li>TAs: Cezar Alexandru, Adithiya Diddapur, Nathalie Alexandra Tcherdakoff, Charlotte Dillon, Ollie Mamuda, Imran Zamin Ali, Elliot Buckingham, Michael Poluektov, Viet-anh Tran, Philip Mortimer, Harry Tune, Jeremy Colfer, Amos Holland</li>
+</ul>		
+
+<h3>Teaching Sessions</h3> 
+<ul>
+ <li>Lectures: Mondays 10am (PHYS BLDG G42 POWELL), Thursdays 3pm (QUEENS BLDG 1.40 PUGSLEY) </li>
+ <li>Small group problem classes: Tuesdays 
+  <ul>
+<li>Group 1: Tuesday 11-1pm - QUEENS BLDG 1.58</li>
+<li>Group 2: Tuesday 11-1pm - QUEENS BLDG 1.59 DES</li>
+<li>Group 3: Tuesday 11-1pm - QUEENS BLDG 1.60 DES</li>
+<li>Group 4: Tuesday 2-4pm - QUEENS BLDG 1.59 DES</li>
+<li>Group 5: Tuesday 2-4pm - QUEENS BLDG 1.60 DES</li>
+<li>Group 6: Tuesday 4-6pm - QUEENS BLDG 1.59 DES</li>
+<li>Group 7: Tuesday 4-6pm - QUEENS BLDG 1.60 DES</li>
+<li>Group 8: Tuesday 4-6pm - QUEENS BLDG 1.7</li>
+  </ul>
+  
+  <br>
+  
+  Please only attend the problem class that you were  assigned to (check your timetable for this)! The problem class in week X will discuss the problem sheet published in week X-1.
+ </li>
+ <li>OPTIONAL: Drop-in session: Thursdays 1-2pm - MVB03.44 (staffed by our excellent TAs)</li>
+ <li>OPTIONAL: Office hour: Friday 1-2pm - MVB03.06 (with Christian Konrad)</li>
+</ul>    
+  </td>
+ </tr>
+</table>
+
+
+<h3>Course Material</h3> 
+<br>
+All lectures will be taught using slides. Slides will be made available online (below on this webpage). An excellent and more detailed coverage of many of the topics (however not all of them) treated in this course is given in:
+
+"Introduction to Algorithms", Cormen, Leiserson, Rivest, Stein, 3rd edition, The MIT press, 2009 .
+
+<h3>Discussion Board</h3> 
+We will use the Microsoft Teams group for this unit as our discussion board. We wish to see active participation!
+
+
+<h3>Assessment</h3> 
+May/June in-person exam (roughly 80&percnt; multiple choice questions and 20&percnt; long answer questions) - counts 50&percnt; towards your final grade in the joint unit <i>COMS10017 Object-Oriented Programming and Algorithms I</i>
+
+ <br><br>
+Previous exam papers:
+<ul>
+ <li>2022: click <a href="alg/worksheets/exam-2022.pdf">here</a> </li>
+<li>2019: click <a href="alg/worksheets/exam-2019.pdf">here</a> </li>
+</ul>
+
+<br> <br>
+
+
+<hr>
+
+<h3>Schedule</h3>
+
+<br> <br>
+
+
+<table style="width:90%; border-collapse: separate; border: 0px solid black;" cellspacing="2px" align="center">
+ <tr style="background-color:#bbf"><th style="width:160px">Week</th>
+  <th style="width:290px" align="left">Learning Session</th><th style="width:50px" align="left">Slides</th><th align="left" style="width:70px">Recording</th>
+ </tr>
+ <tr style="background-color:#eed"><td rowspan="4" valign = "top" align="center">W13: 23 - 27 Jan <br> <br> <b>Problem Sheet 1</b> <br><a href="alg/worksheets/sheet1.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet1-solution.pdf"></a></td><td>Welcome and Introduction</td><td align="center"><a href="alg/slides/01-Introduction-web.pdf"></a></td><td align="center"></td></tr>
+ 
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/02-peak-finding-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/03-why-constants-matter-less-web.pdf"></a></td><td align="center"> </td></tr>
+
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/04-big-o-notation-web.pdf"></a></td><td align="center"> </td></tr>
+
+ 
+ 
+ 
+ 
+ <tr style="background-color:#eef"><td rowspan="4" valign="top" align="center">W14: 30 Jan - 03 Feb <br> <br> <b>Problem Sheet 2</b> <br><a href="alg/worksheets/sheet2.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet2-solution.pdf"></a></td><td>&nbsp;</td></td><td align="center"><a href="alg/slides/05-theta-omega-web.pdf"></a></td><td align="center">   </td></tr>
+ 
+ 
+ 
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/06-RAM-model-web.pdf"></a></td><td align="center">  </td></tr>
+ 
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/07-search-web.pdf"></a></td><td align="center">  </td></tr>
+ 
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/08-induction-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ 
+ 
+ 
+ 
+  <tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W15: 06 - 10 Feb <br> <br> <b>Problem Sheet 3</b> <br><a href="alg/worksheets/sheet3.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet3-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/09-loop-invariants-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ 
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/10-merge-sort-web.pdf"></a></td><td align="center">  </td></tr>
+
+ 
+ 
+  <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W16: 13 - 17 Feb <br> <br> <b>Problem Sheet 4</b> <br><a href="alg/worksheets/sheet4.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet4-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/11-maximum-subarray-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/12-trees-web.pdf"></a></td><td align="center">  </td></tr>
+
+ 
+ 
+<tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W17: 20 - 24 Feb <br> <br> <b>Problem Sheet 5</b> <br><a href="alg/worksheets/sheet5.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet5-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/13-heap-sort-web.pdf"></a></td><td align="center">  </td></tr>
+ 
+ 
+ 
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/14-quick-sort-web.pdf"></a></td><td align="center"> </td></tr>
+  
+ 
+ 
+ 
+<tr style="background-color:#eef"><td rowspan="1" valign="top" align="center">W18: 27 Feb - 03 Mar</td><td colspan="1"><center><b>READING WEEK</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+  
+ 
+ <tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W19: 06 - 10 Mar <br> <br> <b>Problem Sheet 6</b> <br><a href="alg/worksheets/sheet6.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet6-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/15-quick-sort-runtime-web.pdf"></a></td><td align="center"> </td></tr>
+
+ <tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/16-sorting-lb-web.pdf"></a></td><td align="center">  </td></tr>
+ 
+ 
+
+ 
+ <tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W20: 13 - 17 Mar <br> <br> <b>Problem Sheet 7</b> <br><a href="alg/worksheets/sheet7.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet7-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/17-counting-radix-web.pdf"></a></td><td align="center">  </td></tr>
+
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/18-recurrences-1-web.pdf"></a></td><td align="center">  </td></tr>
+
+
+<tr style="background-color:#eed"><td rowspan="2" valign="top" align="center">W21: 20 - 24 Mar <br> <br> <b>Problem Sheet 8</b> <br><a href="alg/worksheets/sheet8.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet8-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/19-recurrences-2-web.pdf"></a></td><td align="center"> </td></tr>
+
+
+<tr style="background-color:#eed"><td>&nbsp;</td><td align="center"><a href="alg/slides/20-fibonacci-numbers-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ <tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">EV1: 27  - 31 Mar</td><td colspan="1"><center><b>Easter Week 1</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+ 
+ <tr style="background-color:#eef"><td rowspan="1" valign="top" align="center">EV2: 03 - 07 Apr</td><td colspan="1"><center><b>Easter Week 2</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+
+<tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">EV3: 10 - 14 Apr</td><td colspan="1"><center><b>Easter Week 3</b></center></td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+ 
+
+ 
+<tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W22: 17 Apr - 22 Apr <br> <br> <b>Problem Sheet 9</b> <br><a href="alg/worksheets/sheet9.pdf"></a>not yet available&nbsp;<a href="alg/worksheets/sheet9-solution.pdf"></a></td><td>&nbsp;</td><td align="center"><a href="alg/slides/21-pole-cutting-web.pdf"></a></td><td align="center"> </td></tr>
+
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/22-matrix-chain-multiplication-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ 
+ 
+
+
+<tr style="background-color:#eef"><td rowspan="2" valign="top" align="center">W23: 24 - 28 Apr</td><td>&nbsp;</td><td align="center"><a href="alg/slides/22-matrix-chain-multiplication-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ <tr style="background-color:#eef"><td>&nbsp;</td><td align="center"><a href="alg/slides/24-elements-of-dyn-prog-web.pdf"></a></td><td align="center"> </td></tr>
+ 
+ 
+
+<tr style="background-color:#eed"><td rowspan="1" valign="top" align="center">W24: 01 - 05 May</td><td><b>Revision Week</b>, no new material</td><td align="center"><a href=""></a></td><td align="center"> <a href=""></a> </td></tr>
+
+ 
+</table> 
+ 
+ 		
+		
+	</body>
+</html>
+
+
+
+
+
+
+
