@@ -1,331 +1,445 @@
-<html>
-	<head>
-		<style>		
-			body {
-				font-family: helvetica;
-				color: #222222;
-			}
-			
-			.centeringbody {
-				margin: 0 auto;
-			}
-			
-			a {
-				color: #4466dd;
-				text-decoration: none;
-			}
-			a:visited {
-				color: #4466dd;
-				text-decoration: none;
-			}
-			
-			a:hover {
-				color: #113388;
-				text-decoration: underline;
-			}
-			.annot {
-				color: #777777;
-				font-size: 80%;
-			}
-			
-			.profilepic {
-				height: 11rem; 
-				border-radius: 15px;
-			}
-			
-			.header {
-				color: #000000;
-				font-size: 200%;
-				font-weight: bold;
-			}
-			hr {
-				border: none;
-				height: 1px;				
-				background-color: #bbbbbb;
-				margin-bottom: 15px;
-				margin-top: 15px;
-			}
-			
-			.hrstrong {
-				border: none;
-				height: 1px;				
-				background-color: #000000;
-				margin-bottom: 15px;
-				margin-top: 15px;
+<!DOCTYPE html>
 
-			}
-			ul {
-			list-style-type:circle;
-			}
-		</style>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYZN6X0YP"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-HTYZN6X0YP');
-		</script>
-	
-	</head>
-	<body>
-	
-	
-
-	<div class="centeringbody" style="width: 80%; align: center">
-	<table style="width: 100%">
-	 <tr><td><div class="header">Algorithms and Complexity</div><br><table>
-	 <tr><td style="padding-right: 60px; text-align: center"><a href="#news">NEWS</a></td> <td style="padding-right: 60px; text-align: center"><a href="#people">PEOPLE</a></td><!-- <td style="padding-right: 60px; text-align: center"><a href="#teaching">TEACHING</a></td> --> <td style="padding-right: 60px; text-align: center"><a href="#publications">PUBLICATIONS</a></td><td style="padding-right: 60px; text-align: center"><a href="#contact">CONTACT</a></td> </tr>
-	</table>
-	</td><td> <a href="https://www.bristol.ac.uk/"><img align="right" style="height: 60px" src="images/bristol-logo.jpg"></a></td></tr>
-	</table>
-	
-	<hr class="hrstrong">
-	
-	Welcome to the website of the Algorithms and Complexity research group at the <a href="https://www.bristol.ac.uk/">University of Bristol</a>. <br><br>
-	<b>Our Research Interests.</b> Our current research focusses on:
-	<ul>
-	 <li>String Algorithms (Rapha&euml;l Clifford) </li>
-	 <li>Algorithmic theory for processing massive data sets, streaming algorithms, communication complexity, theory of distributed computing (Christian Konrad)</li>
-	 <li>Counting complexity, parameterised complexity, random algorithms, random processes on networks, graph theory (John Lapinskas)</li>
-	 <li>Computational Complexity (Shuo Pang)</li>
-	</ul>
-	
-	<b>Getting involved.</b> We offer BSc/MEng projects for Bristol students (implementation/engineering of algorithms, algorithmic theory) as well as PhD positions in all areas relevant to our research. Students with an interest in algorithmic theory and a solid foundation in mathematics are strongly encouraged to <a href="#contact">get in touch</a>.
-	
-	<hr>
-	
-	<h2 id="news">News</h2> 
-	<table>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>September 2026</b></td><td>Paper "Fault-Tolerant Distance Oracles Below the n &sdot; f Barrier" (by Sanjeev Khanna, Christian Konrad, Aaron Putterman) accepted at SODA 2027!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2026</b></td><td>Paper "On the Assadi–Liu–Tarjan Auction Algorithm for Bipartite Matching: Simplification, Alternative Analysis, and Hard Instance" (by Christian Konrad, Kheeran Naidu, Archie Walton, Eric Wang) accepted at ESA (track S) 2026!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>May 2026</b></td><td>Congratulations to Adi for passing his PhD viva! Thanks a lot to Standa and Sagnik for acting as external examiners, and to Meng Wang as independent chair! <br> <br>
-	 <br> <center><a href="images/adi-viva.png"> <img src="images/adi-viva.png" width="400"> </a> </center> <br> </td></tr></td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>December 2025</b></td><td>Paper "Unit Interval Selection in Random Order Streams" (by Cezar-Mihail Alexandru, Adithya Diddapur, Magnús M. Halldórsson, Christian Konrad, Kheeran Naidu) accepted at STACS 2026!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2025</b></td><td>Paper "Lower Bounds for CSP Hierarchies Through Ideal Reduction" (by Jonas Conneryd, Yassine Ghannane, Shuo Pang) accepted at SODA 2026!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2025</b></td><td>Paper "Semi-Robust Communication Complexity of Maximum Matching" (by Gabriel Cipriani Huete, Adithya Diddapur, Pavel Dvorak, Christian Konrad) accepted at SOSA 2026!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>September 2025</b></td><td>Christian will serve on the Programme Committee of SWAT 2026 and <a href="https://acm-stoc.org/">STOC 2026</a>!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2025</b></td><td>Paper "Constructing Long Paths in Graph Streams" (by Christian Konrad and Chhaya Trehan) accepted at ESA 2025!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>May 2025</b></td><td>Congratulations to Cezar for passing his PhD viva! Thanks to Magnus and Daniel for acting as external examiners, and to Meng Wang as independent chair! <br> <br>
-	<center><a href="images/cezar-viva.jpg"> <img src="images/cezar-viva.jpg" width="400"> </a> </center> <br> </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>May 2025</b></td><td>We welcome <a href="https://shuopang.net/">Shuo Pang</a> who joined our group as a new Lecturer in Algorithms in Complexity! <br> <br> </tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>April 2025</b></td><td>Paper "Maximal Matching in Bounded-Deletion Streams" (by Sanjeev Khanna, Christian Konrad, Jacques Dark) accepted at ICALP 2025! <br> <br> </tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>January 2025</b></td><td>Conor presenting the paper  "Graph Reconstruction via MIS Queries" at ITCS 2025! <br> <br>
-	<center><a href="images/conor-itcs.jpg"> <img src="images/conor-itcs.jpg" width="400"> </a> </center> <br> </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>November 2024</b></td><td>Paper "Graph Reconstruction via MIS Queries" (by Christian Konrad, Conor O'Sullivan, Victor Traistaru) accepted at ITCS 2025! </td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2024</b></td><td>Paper "Settling the Pass Complexity of Approximate Matchings in Dynamic Graph Streams" (by Sepehr Assadi, Soheil Behnezhad, Christian Konrad, Kheeran Naidu, Janani Sundaresan) accepted at SODA 2025! See <a href="https://arxiv.org/abs/2407.21005">here</a> for a preprint.</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>September 2024</b></td><td>Paper "Matchings in Low-Arboricity Graphs in the Dynamic Graph Stream Model" (by Christian Konrad, Andrew McGregor, Rik Sengupta and Cuong Than) accepted at FSTTCS 2024! A pre-print will be shared soon. </td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" wid
-th="170px"><b>September 2024</b></td><td>We welcome the new PhD students Archie Walton and Conor O'Sullivan to the team!</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2024</b></td><td>Paper "Interval Selection in Sliding Windows" (by Cezar-Mihail Alexandru, Christian Konrad) accepted at ESA 2024! Click <a href="https://arxiv.org/abs/2405.09338">here</a> for a pre-print. Cezar will present the paper at the conference. </td></tr>	
-		<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2024</b></td><td>We recently organized a joint Algo-Cryto-Programming Languages workshop for the Bristol research groups in Bath. <br> <br>
-	<center><a href="images/away-day.jpg"> <img src="images/away-day.jpg" width="400"> </a> </center> <br> </td></tr>	
-		<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>April 2024</b></td><td>Paper "Nearly optimal independence oracle algorithms for edge estimation in hypergraphs" (by Holger Dell, John Lapinskas, Kitty Meeks) accepted at ICALP 2024!  See <a href="https://arxiv.org/abs/2211.03874">here</a> for a pre-print.</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>February 2024</b></td><td>Paper "O(log log n) Passes is Optimal for Semi-Streaming Maximal Independent Set" (by Sepehr Assadi, Christian Konrad, Kheeran Naidu, Janani Sundaresan) accepted at STOC 2024! </td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2023</b></td><td>Paper "An Unconditional Lower Bound for Two-Pass Streaming Algorithms for Maximum Matching Approximation" (by Christian Konrad, Kheeran Naidu) accepted at SODA 2024! Kheeran will present the paper at the conference. </td></tr>
-
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>September 2023</b></td><td>Paper "Interval Selection in Data Streams: Weighted Intervals and the Insertion-deletion Setting" (by Jacques Dark, Adithya Diddapur, Christian Konrad) accepted at FSTTCS 2023! Adi will present the paper at the conference. </td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>May 2023</b></td><td>Paper "Graph Ranking and the Cost of Sybil Defense" (by Gwendolyn Farach-Colton, Martin Farach-Colton, Leslie Goldberg, Hanna Komlos, John Lapinskas, Reut Levi, Moti Medina and Miguel Mosteiro) accepted at EC 2023! See <a href="https://arxiv.org/abs/1803.05001">here</a> for a pre-print.</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>March 2023</b></td><td>Paper "Set Cover in the One-pass Edge-arrival Streaming Model" (by Sanjeev Khanna, Christian Konrad, and Cezar Alexandru) accepted at PODS 2023!</td></tr>	
-    <tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>March 2023</b></td><td>Our PhD students Cezar and Kheeran presented the papers <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=17658">Improved Weighted Matching in the Sliding Window Model</a> and <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=17693">Maximum Matching via Maximal Matching Queries</a> at STACS 2023 in Hamburg! <br> <br>
-	<center><a href="images/Cezar-STACS.png"> <img src="images/Cezar-STACS.png" width="300"> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="images/Kheeran-STACS.png"> <img src="images/Kheeran-STACS.png" width="300"> </a></center> <br></td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>December 2022</b></td><td>Two papers "Maximum Matching via Maximal Matching Queries" (by Christian Konrad, Kheeran Naidu and Arun Steward) and <a href="https://arxiv.org/abs/2204.04717">Improved Weighted Matching in the Sliding Window Model</a> (by Cezar Alexandru, Pavel Dvorak, Christian Konrad, Kheeran Naidu) accepted at STACS 2023!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2022</b></td><td>Paper <a href="https://arxiv.org/abs/2203.17144">Instability of backoff protocols with arbitrary arrival rates</a> by John Lapinskas (joint work with Leslie Ann Goldberg) accepted at SODA 2023! </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>October 2022</b></td><td>Paper "When you come at the king you best not miss" by Chhaya Trehan (joint work with Oded Lachish and Felix Reidl) accepted at FSTTCS 2022. Congratulations to Chhaya! </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>September 2022</b></td><td>We welcome Research Associate <a href="https://www.lse.ac.uk/Mathematics/people/Research-Students/Chhaya-Trehan">Chhaya Trehan</a> and PhD student Adithya Diddapur  to the group!</td></tr>		
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2022</b></td><td><a href="http://people.cs.bris.ac.uk/~clifford//">Raphael Clifford</a> received the  Best Paper Award at <a href="https://www.stringology.org/event/CPM2022/index.html">CPM'22</a> for his paper <a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=16145">The Dynamic k-Mismatch Problem</a> (joint work with  Pawel Gawrychowski, Tomasz Kociumaka, Daniel Martin, and Przemysław Uznanski), congratulations!</td></tr>
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>June 2022</b></td><td>Congratulations to our PhD student <a href="https://kheerannaidu.com/">Kheeran Naidu</a> on his student paper "Space Optimal Vertex Cover in Dynamic Streams" accepted at APPROX 2022 (joint work with <a href="https://people.cs.rutgers.edu/~vjs69/">Vihan Shah</a>, Rutgers University)!</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right;" valign="top" width="170px"><b>November 2021</b></td><td>Paper "Optimal Bounds for Dominating Set in Graph Streams" by Sanjeev Khanna and Christian Konrad accepted at ITCS 2022!</td></tr>	
-	<tr><td style="padding-right: 10px; text-align:right" valign="top"><b>October 2021</b></td><td>We welcome our new Research Associate <a href="https://iuuk.mff.cuni.cz/~koblich/">Dr Pavel Dvorak</a> to the group! </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right" valign="top"><b>September 2021</b></td><td>We welcome our new PhD student Cezar Alexandru to the group! </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right" valign="top"><b>August 2021</b></td><td>PhD student <a href="https://kheerannaidu.com/">Kheeran Naidu</a> presented his <a href="https://arxiv.org/abs/2107.07841">recent work</a> at APPROX'21. Check out his presentation <a href="https://www.youtube.com/watch?v=0OwsPy4B3Rc">here</a>. </td></tr>
-	<tr><td style="padding-right: 10px; text-align:right" valign="top"><b>July 2021</b></td><td>Group webpage goes online!</td></tr>	
-	<tr>
-	
-	</tr>
-	</table>
-	
-	<hr>
-	
-	<h2 id="people">People</h2>
-	<table align="center">
-	<tr>
-	 <th colspan="4" style="padding-bottom: 0.1em;font-size:130%;">Core Faculty</th> 
-	</tr>	
-	<tr>
-	 <td style="padding: 2em;" valign="top"><center><a href="http://people.cs.bris.ac.uk/~clifford//"><img src="images/raphael.jpg" class="profilepic"></a><br><br><a href="http://people.cs.bris.ac.uk/~clifford//">Rapha&euml;l Clifford</a> </center></td> 
-	 <td style="padding: 2em;" valign="top"><center><a href="http://people.cs.bris.ac.uk/~konrad/"><img src="images/christian-blur.jpg" class="profilepic"></a><br><br><center><a href="http://people.cs.bris.ac.uk/~konrad/">Christian Konrad</a><br><div class="annot">(Head of Group)</div></center></td> 
-	 <td style="padding: 2em;" valign="top"><center><a href="https://research-information.bris.ac.uk/en/persons/john-a-lapinskas"><img src="images/dummy-person.jpg" class="profilepic"></a><br><br><a href="https://research-information.bris.ac.uk/en/persons/john-a-lapinskas">John Lapinskas</a></center></td> 	 
-	 <td style="padding: 2em;" valign="top"><center><a href="https://shuopang.net/"><img src="images/shuo.jpg" class="profilepic"></a><br><br><a href="https://shuopang.net/">Shuo Pang</a></center></td> 	 
-	</tr>
-	<tr>
-	</tr>
-	</table>
-
-<table align="center">
-	<tr>
-	 <th colspan="1" style="padding-bottom: 0.1em;font-size:130%;">Postdocs</th> 
-	</tr>	
-	<tr>
-	</tr>
-	</table>
-	
-	<table align="center">  
-	<tr>
-	 <th colspan="3" style="padding-bottom: 0.1em;font-size:130%;">PhD Students</th> 
-	</tr>	
-	<tr>
-	<td style="padding: 2em;"><a href="https://osullivanconor.com/"><img src="images/conor-cropped.jpeg" class="profilepic"></a><br><br><center><a href="https://osullivanconor.com/">Conor O'Sullivan</a><br><div class="annot">since 2024 <br>Supervisor: Christian Konrad</div></center></td>
-<td style="padding: 2em;"><a href="https://archiewalton.com/"><img src="images/Archie.jpg" class="profilepic"></a><br><br><center><a href="https://archiewalton.com/">Archie Walton</a><br><div class="annot">since 2024<br> Supervisor: Christian Konrad</div></center></td>	 
-
-   </tr>
-</table>
-<table align="center">
-	<tr>
-	<th colspan="3" style="padding-bottom: 0.1em;font-size:130%;">Former Members</th> 
-	</tr>
-	<tr>
-	<td colspan="3" style="padding: 0.1em;"><a href="https://dblp.org/pid/362/9302.html">Adithya Diddapur</a> (2022 - 2026, former PhD student)</td>
-	</tr>
-	<tr>
-	<td colspan="3" style="padding: 0.1em;"><a href="https://dblp.uni-trier.de/pid/263/3912.html">Cezar Alexandru</a> (2021 - 2025, former PhD student)</td>
-	</tr>
-	<tr>
-	<td colspan="3" style="padding: 0.1em;"><a href="https://kheerannaidu.com/">Kheeran Naidu</a> (2020 - 2024, former PhD student)</td>
-	</tr>
-	<tr>
-	<td colspan="3" style="padding: 0.1em;"><a href="https://dblp.org/pid/150/6334.html">Chhaya Trehan</a> (Sept 2022 - January 2024, former Postdoc)</td>
-	</tr>
-	<tr>
-	<td colspan="3" style="padding: 0.1em;"><a href="https://iuuk.mff.cuni.cz/~koblich/">Pavel Dvorak</a> (Sept 2021 - April 2022, former Postdoc), now at Tata Institute of Fundamental Research, Mumbai</td>
-	</tr>
-	</table>
-
-	
-	
-	<hr>
-	
-<!--	<h2 id="teaching">Teaching</h2>
-	The Algorithms and Complexity group is responsible for all algorithms teaching at Bristol University. This includes the following units:
-	<ul>
-	 <li>Year 1: <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=20%2F21&unitCode=COMS10017">Object-oriented Programming and Algorithms 1</a></li>
-	 <li>Year 2: <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=20%2F21&unitCode=COMS20010">Algorithms 2</a></li>
-	 <li>Year 3: <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=20%2F21&unitCode=COMS30041">Advanced Algorithms</a></li>
-	 <li>Year 4: <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=20%2F21&unitCode=COMSM0068">Advanced Topics in Theoretical Computer Science</a></li>
-	</ul>
-	<hr> 
--->
-	
-	<h2 id="publications">Publications (since 2020)</h2>
-	
-	<b>2027</b>
-	<ul>	
-	<li>Sanjeev Khanna, <strong>Christian Konrad</strong>, Aaron Putterman, "Fault-Tolerant Distance Oracles Below the n &sdot; f Barrier", <i> Symposium on Discrete Algorithms (SODA 2027).</i>  </li>				
-	
-	</ul>
-	
-	<b>2026</b>
-	<ul>	
-	<li><strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, <strong>Archie Walton</strong>, <strong>Eric Wang</strong>, "On the Assadi–Liu–Tarjan Auction Algorithm for Bipartite Matching: Simplification, Alternative Analysis, and Hard Instance", <i> European Symposium on Algorithms (ESA 2026).</i>  </li>				
-	
-	
-	<li><strong>Cezar-Mihail Alexandru</strong>, <strong>Adithya Diddapur</strong>, Magnús M. Halldórsson, <strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, "Unit Interval Selection in Random Order Streams", <i>43rd International Symposium on Theoretical Aspects of Computer Science (STACS 2026).</i>  </li>				
-	
-	<li>Jonas Conneryd, Yassine Ghannane, <strong>Shuo Pang</strong>, "Lower Bounds for CSP Hierarchies Through Ideal Reduction", <i>Symposium on Discrete Algorithms (SODA 2026).</i>  </li>				
-	
-	<li><strong>Gabriel Cipriani Huete</strong>, <strong>Adithya Diddapur</strong>, Pavel Dvorak, <strong>Christian Konrad</strong>, "Semi-Robust Communication Complexity of Maximum Matching", <i>Symposium on Simplicity in Algorithms (SOSA 2026).</i>  </li>				
-	</ul>
-	
-	
-	
-	<b>2025</b>
-	<ul>
-	<li><strong>Christian Konrad</strong>, Chhaya Trehan, "Constructing Long Paths in Graph Streams", <i>Proceedings of the 33rd European Symposium on Algorithms (ESA 2025).</i>.  </li>	
-	
-	<li>Sanjeev Khanna, <strong>Christian Konrad</strong>, Jacques Dark, "Maximal Matching in Bounded-Deletion Streams", <i>Proceedings of the 52nd International Colloquium on Automata, Languages and Programming (ICALP 2025)</i>.  </li>	
-
-	<li><strong>Christian Konrad</strong>, <strong>Conor O'Sullivan</strong>, <strong>Victor Traistaru</strong>, "Graph Reconstruction via MIS Queries", <i>16th Innovations in Theoretical Computer Science Conference (ITCS 2025)</i>.  </li>	
-	
-	<li>Sepehr Assadi, Soheil Behnezhad, <strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, Janani Sundaresan, "Settling the Pass Complexity of Approximate Matchings in Dynamic Graph Streams", <i>Proceedings of the 2025 ACM-SIAM Symposium on Discrete Algorithms (SODA 2025)</i>.  </li>	
-	
-	</ul>
-	
-	
-	<b>2024</b>
-	<ul>
-	<li><strong>Christian Konrad</strong>, Andrew McGregor, Rik Sengupta and Cuong Than, "Matchings in Low-Arboricity Graphs in the Dynamic Graph Stream Model", <i>44th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2024)</i>.  </li>	
-	<li><strong>Cezar-Mihail Alexandru</strong>, <strong>Christian Konrad</strong>,"Interval Selection in Sliding Windows", <i>Proceedings of the 32nd European Symposium on Algorithms (ESA 2024)</i>. </li>
-	<li>Holger Dell, <strong>John Lapinskas</strong>, Kitty Meeks, "Nearly optimal independence oracle algorithms for edge estimation in hypergraphs", <i>Proceedings of the 51st EATCS International Colloquium on Automata, Languages and Programming (ICALP 2024)</i>. </li>
-	<li>Sepehr Assadi, <strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, Janani Sundaresan, "O(log log n) Passes is Optimal for Semi-Streaming Maximal Independent Set", <i>Proceedings of the 56th ACM Symposium on Theory of Computing (STOC 2024)</i>. </li>
-	<li><strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, "An Unconditional Lower Bound for Two-Pass Streaming Algorithms for Maximum Matching Approximation", <i>Proceedings of the 2024 ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</i>. </li>
-	</ul>
-		
-	<b>2023</b>
-	<ul>
-	<li>Jacques Dark, <strong>Adithya Diddapur</strong>, <strong>Christian Konrad</strong>, "Interval Selection in Data Streams: Weighted Intervals and the Insertion-deletion Setting", <i>43rd IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2023)</i>. </li>
-	<li>Gwendolyn Farach-Colton, Martin Farach-Colton, Leslie Goldberg, Hanna Komlos, <strong>John Lapinskas</strong>, Reut Levi, Moti Medina and Miguel Mosteiro, "Graph Ranking and the Cost of Sybil Defense", <i>24th ACM Conference on Economics and Computation (EC'23).</li>
-	<li><strong>Christian Konrad</strong>, Sanjeev Khanna, <strong>Cezar Alexandru</strong>, "Set Cover in the One-pass Edge-arrival Streaming Model", <i>42nd ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems (PODS 2023)</i>. </li>
-	<li><strong>Cezar Alexandru</strong>, <strong>Pavel Dvorak</strong>, <strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, "Improved Weighted Matching in the Sliding Window Model", <i>40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</i>. </li>
-	<li><strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, Arun Steward, "Maximum Matching via Maximal Matching Queries", <i>40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</i>. </li>
-	 <li>Leslie Ann Goldberg, <strong>John Lapinskas</strong>, "Instability of backoff protocols with arbitrary arrival rates", <i>ACM-SIAM Symposium on Discrete Algorithms (SODA23)</i>. </li>
-	</ul>
-	
-	
-	<b>2022</b>
-	<ul>
-	<li>Oded Lachish, Felix Reidl and <b>Chhaya Trehan</b>, "When you come at the king you best not miss", <i>42nd IARCS Annual Conference on
-Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2022)</i>. </li>
-	<li><b>Pavel Dvořák</b>, Monika Krawczyk,  Tomáš Masařík, Jana Novotná,  Paweł Rzążewski, Aneta Żuk, "List Locally Surjective Homomorphisms in Hereditary Graph Classes", <i>The 33rd International Symposium on Algorithms and Computation (ISAAC 2022)</i>. </li>
-	<li><strong>Raphael Clifford</strong>, Pawel Gawrychowski, Tomasz Kociumaka, Daniel P. Martin, Przemyslaw Uznanski, "The Dynamic k-Mismatch Problem", <i>33rd Annual Symposium on Combinatorial Pattern Matching (CPM 2022)</i>. </li>
-	<li><strong>Christian Konrad</strong>, Victor Zamaraev, "Distributed Minimum Vertex Coloring and Maximum Independent Set in Chordal Graphs", <i>Theoretical Computer Science (2022)</i>.</li>
-	<li><strong>Christian Konrad</strong>, Tigran Tonoyan, "Guessing Fractions of Online Sequences", <i>Discrete Applied Mathematics (2022)</i>.</li>
-	 <li><strong>Kheeran Naidu</strong>, Vihan Shah, "Space Optimal Vertex Cover in Dynamic Streams", <i>Proceedings of the 25th International Workshop on Approximation Algorithms for Combinatorial Optimization Problems (APPROX 2022)</i>, to appear. </li>
-	 <li>Sanjeev Khanna, <strong>Christian Konrad</strong>, "Optimal Bounds for Dominating Set in Graph Streams", <i>13th Innovations in Theoretical Computer Science Conference (ITCS 2022)</i>.</li>
-	</ul>
-	
-	<b>2021</b>
-	<ul>
-	 <li>Leslie Ann Goldberg, Joost Jorritsma, Júlia Komjáthy, <b>John Lapinskas</b>, "Increasing efficacy of contact-tracing applications by user referrals and stricter quarantining", <i>PLOS ONE (2021)</i></li>
-	 <li>Júlia Komjáthy, <b>John Lapinskas</b>, Johannes Lengler, "Stopping explosion by penalising transmission to hubs in scale-free spatial random graphs", <i>Annales de l’Institut Henri Poincaré (B) Probabilités et Statistiques (2021)</i></li>
-	 <li>Holger Dell, <b>John Lapinskas</b>, "Fine-grained reductions from approximate counting to decision", <i>ACM Transactions on Computation Theory (2021)</i>, <i>preliminary version in Proceedings of the 50th Annual ACM SIGACT Symptosium on Theory of Computing (STOC 2018)</i></li>
-	 <li><strong>Christian Konrad</strong>, <strong>Kheeran Naidu</strong>, "On Two-pass Streaming Algorithms for Maximum Bipartite Matching",
-<i>Proceedings of the 24th International Workshop on Approximation Algorithms for Combinatorial Optimization Problems (APPROX 2021)</i>.</li>
-	<li>
-	<strong>Christian Konrad</strong>, "Frequent Elements with Witnesses in Data Streams", <i>40th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems (PODS 2021)</i>. </li>
-	<li>Michael Barlow, <strong>Christian Konrad</strong>, Charana Nandasena, "Streaming Set Cover in Practice", <i>Symposium on Algorithm Engineering and Experiments (ALENEX 2021)</i>. 
-	</li>
-		</ul>
-	
-	<b>2020</b>
-	<ul>
-	 <li>Holger Dell, <b>John Lapinskas</b>, Kitty Meeks, "Approximately counting and sampling small witnesses using a colourful decision oracle", <i>ACM-SIAM Symposium on Discrete Algorithms (SODA 2020)</i></li>
-	 <li>Lidiya Binti Khalil, <strong>Christian Konrad</strong>, "Constructing Large Matchings via Query Access to a Maximal Matching Oracle",
-<i>40th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2020)</i>.  </li>
-	 <li>Jacques Dark, <strong>Christian Konrad</strong>, "Optimal Lower Bounds for Matching and Vertex Cover in Dynamic Graph Streams", <i>35th Computational Complexity Conference (CCC 2020)</i>. </li>
-	 <li>Artur Czumaj, <strong>Christian Konrad</strong>, "Detecting cliques in CONGEST networks", <i>Distributed Computing (2020)</i>. </li>
-	 <li>Rajiv Gandhi, Magnús M. Halldórsson, Hoon Ho, <strong>Christian Konrad</strong>, Guy Kortsarz, "Radio Aggregation Scheduling", <i>Theoretical Computer Science (2020)</i>. </li>
-	 <li>Magnús M. Halldórsson, <strong>Christian Konrad</strong>, Tigran Tonoyan, "Limitations of Current Wireless Scheduling Algorithms", <i>Theoretical Computer Science (2020)</i>. </li>
-	 <li>Magnús M. Halldórsson, <strong>Christian Konrad</strong>, "Improved Distributed Algorithms for Coloring Interval Graphs with Application to Multicoloring Trees", <i>Theoretical Computer Science (2020)</i>. </li>	
-	
-	</ul>
-	
-	
-	<hr>
-	
-	<h2 id="contact">Contact</h2>
-	<table width="100%">
-	 <tr> 
-	  <td><a href="">Algorithms and Complexity research group</a><br>
-	  <a href="https://www.bristol.ac.uk/science-engineering/schools/computer-science/">School of Computer Science</a><br>
-	  <a href="https://www.bristol.ac.uk/science-engineering/">Faculty of Science and Engineering</a><br>
-	  <a href="https://www.bristol.ac.uk/">University of Bristol</a></td><td style="text-align: left">	  
-	  Merchant Venturers Building<br>Woodland Road<br>BS8 1UB, Bristol<br>United Kingdom</td>
-	 </tr>
-	</table>
-	<br>
-	Group contact email: <a href="mailto:christian.konrad@bristol.ac.uk">christian.konrad@bristol.ac.uk</a>
-	</div>
-	
-	</body>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Algorithms and Complexity research group at the University of Bristol. Research, group members, news, publications and contact information." name="description"/>
+<meta content="#f9fbfc" name="theme-color"/>
+<title>
+   Algorithms and Complexity | University of Bristol
+  </title>
+<link href="assets/site.css" rel="stylesheet"/>
+<script defer="True" src="content/news.js">
+</script>
+<script defer="True" src="content/publications.js">
+</script>
+<script defer="True" src="assets/site.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#main">
+   Skip to content
+  </a>
+<header class="site-header">
+<div class="site-wrap head-inner">
+<div class="brand-area">
+<a aria-label="University of Bristol website" class="brand-mark" href="https://www.bristol.ac.uk/">
+<span class="brand-fallback">
+       University of Bristol
+      </span>
+<img alt="University of Bristol logo, red crest and black wordmark" decoding="async" loading="eager" onerror="this.style.display='none';this.parentElement.classList.add('image-unavailable')" src="images/bristol-logo.jpg"/>
+</a>
+<span aria-hidden="true" class="brand-divider">
+</span>
+<span class="brand-caption">
+<a href="https://www.bristol.ac.uk/science-engineering/schools/computer-science/">
+       School of Computer Science
+      </a>
+</span>
+</div>
+<nav aria-label="Main navigation" class="site-nav">
+<a href="#about">
+      About
+     </a>
+<a href="#research">
+      Research
+     </a>
+<a href="#news">
+      News
+     </a>
+<a href="#people">
+      People
+     </a>
+<a href="#publications">
+      Publications
+     </a>
+<a href="#contact">
+      Contact
+     </a>
+</nav>
+</div>
+</header>
+<main class="site-wrap" id="main">
+<section aria-labelledby="main-title" class="intro" id="about">
+<div class="page-heading">
+<h1 id="main-title">
+      Algorithms and Complexity
+     </h1>
+<p class="heading-sub">
+      Research group ·
+      <a href="https://www.bristol.ac.uk/science-engineering/schools/computer-science/">
+       School of Computer Science
+      </a>
+</p>
+</div>
+<div aria-hidden="true" class="title-rule">
+</div>
+<div class="lead-layout">
+<div class="description">
+<h2>
+       About the group
+      </h2>
+<p>
+       We are the Algorithms and Complexity research group in the
+       <a href="https://www.bristol.ac.uk/science-engineering/schools/computer-science/">
+        School of Computer Science
+       </a>
+       at the
+       <a href="https://www.bristol.ac.uk/">
+        University of Bristol
+       </a>
+       . Our research covers algorithms, computational complexity and related areas of theoretical computer science.
+      </p>
+<p>
+       The group works on theoretical questions relating to the design, analysis and limitations of algorithms, including problems involving large data sets, graphs, strings and computational complexity.
+      </p>
+<aside aria-labelledby="phd-opportunities-heading" class="phd-notice" id="phd-opportunities">
+<p class="phd-notice-label">PhD opportunities</p>
+<h3 id="phd-opportunities-heading">We are recruiting PhD students</h3>
+<p>We are actively looking for PhD students to join the Algorithms and Complexity group. Please get in touch to discuss opportunities if you have a strong background in Mathematics.</p>
+<p class="phd-deadline"><strong>Application deadline: January 2027.</strong> Interested students please get in touch soon.</p>
+<a class="phd-notice-link" href="mailto:christian.konrad@bristol.ac.uk?subject=PhD%20enquiry">Get in touch!</a>
+</aside><div class="research-block" id="research">
+<h3>
+        Research interests
+       </h3>
+<ul class="research-list">
+<li>
+<span class="num">
+          01
+         </span>
+<span>
+<strong>
+           String algorithms
+          </strong>
+          —
+          <a href="http://people.cs.bris.ac.uk/~clifford/">
+           Raphaël Clifford
+          </a>
+</span>
+</li>
+<li>
+<span class="num">
+          02
+         </span>
+<span>
+<strong>
+           Massive-data algorithms, streaming, communication complexity and distributed computing
+          </strong>
+          —
+          <a href="http://people.cs.bris.ac.uk/~konrad/">
+           Christian Konrad
+          </a>
+</span>
+</li>
+<li>
+<span class="num">
+          03
+         </span>
+<span>
+<strong>
+           Counting and parameterised complexity, randomised algorithms, random processes on networks and graph theory
+          </strong>
+          —
+          <a href="https://research-information.bris.ac.uk/en/persons/john-a-lapinskas">
+           John Lapinskas
+          </a>
+</span>
+</li>
+<li>
+<span class="num">
+          04
+         </span>
+<span>
+<strong>
+           Computational complexity
+          </strong>
+          —
+          <a href="https://shuopang.net/">
+           Shuo Pang
+          </a>
+</span>
+</li>
+</ul>
+</div>
+<aside class="join-panel">
+<h3>Undergraduate and MEng projects</h3>
+<p>We offer BSc/MEng projects for Bristol students, including algorithm implementation, engineering and theory. Students interested in algorithmic theory and with a strong mathematical foundation are encouraged to <a href="#contact">get in touch</a>.</p>
+</aside>
+</div>
+<aside aria-labelledby="news-title" class="news-panel" id="news">
+<h2 id="news-title">
+       Latest news
+      </h2>
+<div id="latest-news-items">
+</div>
+<a class="news-archive-link" href="news.html" rel="noopener" target="_blank">
+       All news
+      </a>
+</aside>
+</div>
+</section>
+<section aria-labelledby="people-title" class="content-section" id="people">
+<div class="section-head">
+<h2 id="people-title">
+      People
+     </h2>
+<p>
+      Current group members
+     </p>
+</div>
+<div class="people-subheading">
+<h3>
+      Core faculty
+     </h3>
+</div>
+<div class="faculty-grid">
+<article class="profile">
+<a aria-label="View Raphaël Clifford’s webpage" class="profile-photo" href="http://people.cs.bris.ac.uk/~clifford/">
+<span class="photo-fallback">
+        RC
+       </span>
+<img alt="Portrait of Raphaël Clifford" loading="lazy" onerror="this.style.display='none'" src="images/raphael.jpg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="http://people.cs.bris.ac.uk/~clifford/">
+         Raphaël Clifford
+        </a>
+</h3>
+<p>
+        String algorithms
+       </p>
+</div>
+</article>
+<article class="profile">
+<a aria-label="View Christian Konrad’s webpage" class="profile-photo" href="http://people.cs.bris.ac.uk/~konrad/">
+<span class="photo-fallback">
+        CK
+       </span>
+<img alt="Portrait of Christian Konrad" loading="lazy" onerror="this.style.display='none'" src="images/christian-blur.jpg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="http://people.cs.bris.ac.uk/~konrad/">
+         Christian Konrad
+        </a>
+</h3>
+<p>
+        Head of Group · Streaming and distributed algorithms
+       </p>
+</div>
+</article>
+<article class="profile">
+<a aria-label="View John Lapinskas’s webpage" class="profile-photo" href="https://research-information.bris.ac.uk/en/persons/john-a-lapinskas">
+<span class="photo-fallback">
+        JL
+       </span>
+<img alt="Photo not available for John Lapinskas" loading="lazy" onerror="this.style.display='none'" src="images/dummy-person.jpg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="https://research-information.bris.ac.uk/en/persons/john-a-lapinskas">
+         John Lapinskas
+        </a>
+</h3>
+<p>
+        Counting complexity and graph theory
+       </p>
+</div>
+</article>
+<article class="profile">
+<a aria-label="View Shuo Pang’s webpage" class="profile-photo" href="https://shuopang.net/">
+<span class="photo-fallback">
+        SP
+       </span>
+<img alt="Portrait of Shuo Pang" loading="lazy" onerror="this.style.display='none'" src="images/shuo.jpg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="https://shuopang.net/">
+         Shuo Pang
+        </a>
+</h3>
+<p>
+        Computational complexity
+       </p>
+</div>
+</article>
+</div>
+<div class="people-subheading student-heading">
+<h3>
+      PhD students
+     </h3>
+</div>
+<div class="student-grid">
+<article class="profile">
+<a aria-label="View Conor O’Sullivan’s webpage" class="profile-photo" href="https://osullivanconor.com/">
+<span class="photo-fallback">
+        CO
+       </span>
+<img alt="Portrait of Conor O’Sullivan" loading="lazy" onerror="this.style.display='none'" src="images/conor-cropped.jpeg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="https://osullivanconor.com/">
+         Conor O’Sullivan
+        </a>
+</h3>
+<p>
+        PhD student · Since 2024
+       </p>
+</div>
+</article>
+<article class="profile">
+<a aria-label="View Archie Walton’s webpage" class="profile-photo" href="https://archiewalton.com/">
+<span class="photo-fallback">
+        AW
+       </span>
+<img alt="Portrait of Archie Walton" loading="lazy" onerror="this.style.display='none'" src="images/Archie.jpg"/>
+</a>
+<div class="profile-info">
+<h3>
+<a href="https://archiewalton.com/">
+         Archie Walton
+        </a>
+</h3>
+<p>
+        PhD student · Since 2024
+       </p>
+</div>
+</article>
+</div>
+<details class="former-details">
+<summary>
+<span>
+       Former members
+      </span>
+<span aria-hidden="true" class="chev">
+       ⌄
+      </span>
+</summary>
+<ul class="former-list">
+<li>
+<a href="https://dblp.org/pid/362/9302.html">
+        Adithya Diddapur
+       </a>
+<span>
+        PhD student, 2022–2026
+       </span>
+</li>
+<li>
+<a href="https://dblp.uni-trier.de/pid/263/3912.html">
+        Cezar Alexandru
+       </a>
+<span>
+        PhD student, 2021–2025
+       </span>
+</li>
+<li>
+<a href="https://kheerannaidu.com/">
+        Kheeran Naidu
+       </a>
+<span>
+        PhD student, 2020–2024
+       </span>
+</li>
+<li>
+<a href="https://dblp.org/pid/150/6334.html">
+        Chhaya Trehan
+       </a>
+<span>
+        Postdoctoral researcher, Sept 2022–Jan 2024
+       </span>
+</li>
+<li>
+<a href="https://iuuk.mff.cuni.cz/~koblich/">
+        Pavel Dvořák
+       </a>
+<span>
+        Postdoctoral researcher, Sept 2021–Apr 2022
+       </span>
+</li>
+</ul>
+</details>
+</section>
+<section aria-labelledby="publications-title" class="content-section publications-section" id="publications">
+<div class="section-head">
+<h2 id="publications-title">
+      Publications
+     </h2>
+<p>
+      Since 2020
+     </p>
+</div>
+<p class="pub-intro">
+     Publications involving members of the group, organised by year. Select any year to expand or collapse its list.
+    </p>
+<div id="publication-years">
+</div>
+</section>
+<section aria-labelledby="contact-title" class="content-section contact-section" id="contact">
+<div class="section-head">
+<h2 id="contact-title">
+      Contact
+     </h2>
+</div>
+<div class="contact-layout">
+<div>
+<p>
+<span>
+        Algorithms and Complexity research group
+       </span>
+<br/>
+<a href="https://www.bristol.ac.uk/science-engineering/schools/computer-science/">
+        School of Computer Science
+       </a>
+<br/>
+<a href="https://www.bristol.ac.uk/">
+        University of Bristol
+       </a>
+</p>
+<address>
+       Merchant Venturers Building
+       <br/>
+       Woodland Road
+       <br/>
+       Bristol BS8 1UB
+       <br/>
+       United Kingdom
+      </address>
+</div>
+<div class="contact-card">
+<h3>
+       Group enquiries
+      </h3>
+<p>
+       For questions about the group, research collaborations, student projects or PhD opportunities, contact:
+      </p>
+<p>
+<a href="mailto:christian.konrad@bristol.ac.uk">
+        christian.konrad@bristol.ac.uk
+       </a>
+</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="site-wrap footer-inner">
+<span>
+     Algorithms and Complexity ·
+     <a href="https://www.bristol.ac.uk/">
+      University of Bristol
+     </a>
+</span>
+<span>
+<a href="#main">
+      Back to top
+     </a>
+</span>
+</div>
+</footer>
+</body>
 </html>
