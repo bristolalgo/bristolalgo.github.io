@@ -9,7 +9,7 @@
 window.NEWS_ITEMS = [
   {
     "date": "November 2026",
-    "year": 2027,
+    "year": 2026,
     "title": "PhD Student Conor O'Sullivan secured an AI Internship at Graphcore",
     "description": "AI research internship within the numerics team at Graphcore Research.",
     "links": [
