@@ -7,18 +7,18 @@
 // Keep commas between items. No build step is needed.
 
 window.NEWS_ITEMS = [
-  {
-    "date": "November 2026",
-    "year": 2026,
-    "title": "PhD Student Conor O'Sullivan secured an AI Internship at Graphcore",
-    "description": "AI research internship within the numerics team at Graphcore Research starting in January 2027.",
-    "links": [
-      {
-        "label": "Graphcore",
-        "url": "https://www.graphcore.ai/"
-      }
-    ]
-  },
+  //{
+  //  "date": "November 2026",
+  //  "year": 2026,
+  //  "title": "PhD Student Conor O'Sullivan secured an AI Internship at Graphcore",
+  //  "description": "AI research internship within the numerics team at Graphcore Research starting in January 2027.",
+  //  "links": [
+  //    {
+  //      "label": "Graphcore",
+  //      "url": "https://www.graphcore.ai/"
+  //    }
+  //  ]
+  //},
   {
     "date": "September 2026",
     "year": 2026,
